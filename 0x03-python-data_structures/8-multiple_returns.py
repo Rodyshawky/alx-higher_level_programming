@@ -7,4 +7,3 @@ def multiple_returns(sentence):
     else:
         c = sentence[0]
     return (n, c)
-
