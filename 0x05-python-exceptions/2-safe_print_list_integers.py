@@ -5,9 +5,9 @@ def safe_print_list_integers(my_list=[], x=0):
     try:
         while i != x:
             print("{:d}".format(my_list[i]), end='')
-            i += 1
             count += 1
     except (IndexError, TypeError):
-        None
+        pass
+        i += 1
     return count
 
