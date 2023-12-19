@@ -3,15 +3,15 @@
 
 
 class Square:
-    """Define class"""
+
     def __init__(self, size=0, position=(0, 0)):
-        """initial private size value"""
         self.__size = size
         self.__position = position
-        """size getter"""
+
     @property
     def size(self):
         return self.__size
+
     """size setter"""
     @size.setter
     def size(self, value):
@@ -22,6 +22,7 @@ class Square:
         if value < 0:
             """Value Error Exception"""
             raise ValueError("size must be >= 0")
+
     """position getter"""
     @property
     def position(self):
@@ -30,9 +31,9 @@ class Square:
     @position.setter
     def position(self, value):
         if (not isinstance(value, tuple) or
-            len(value) != 2 or
-            not all(isinstance(i, int) for i in value) or
-            not all(i >= 0 for i in value)):
+                len(value) != 2 or
+                not all(isinstance(i, int) for i in value) or
+                not all(i >= 0 for i in value)):
             """Type Error Exception"""
             raise TypeError("position must be a tuple of 2 positive integers")
             self.__position = value
@@ -50,4 +51,4 @@ class Square:
         for i in range(0, self.__size):
             [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for k in range(0, self.__size)]
-            print("")                      
+            print("")
