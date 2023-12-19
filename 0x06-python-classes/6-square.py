@@ -42,7 +42,7 @@ class Square:
     def area(self):
         """return square Area"""
         return self.__size * self.__size
-
+    """ print # square"""
     def my_print(self):
         """ print empty line"""
         if self.__size == 0:
