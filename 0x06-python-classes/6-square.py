@@ -6,8 +6,8 @@ class Square:
     """Define Class"""
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
     @property
     def size(self):
         return self.__size
@@ -32,9 +32,9 @@ class Square:
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
                 not all(num >= 0 for num in value)):
-            """Type Error Exception"""
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
+
         """public function"""
     def area(self):
         """return square Area"""
