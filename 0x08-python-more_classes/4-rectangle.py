@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""4-rectangle Task
+"""4-rectangle Task.
 """
 
 
@@ -147,4 +147,3 @@ class Rectangle:
 
         """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-
