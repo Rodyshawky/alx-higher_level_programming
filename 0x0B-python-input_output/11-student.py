@@ -52,4 +52,3 @@ class Student:
         """
         # print("Type json --> {}".format(type(json)))
         self.__dict__.update(json)
-
