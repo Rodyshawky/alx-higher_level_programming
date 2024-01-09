@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Module that loads, adds and saves arguments to a Python list"""
-from sys import argv
+import sys
 
 
 load_file = __import__('6-load_from_json_file').load_from_json_file
@@ -12,6 +12,6 @@ except (ValueError, FileNotFoundError):
     json_list = []
 
 for item in argv[1:]:
-    json_list.append(item)
+    json_list.extend(item)
 
 save_file(json_list, 'add_item.json')
