@@ -22,4 +22,3 @@ def pascal_triangle(n):
         pascal.append([x + n for x, n in zip(pascal[-1] + [0],
                                              [0] + pascal[-1])])
     return (pascal)
-
