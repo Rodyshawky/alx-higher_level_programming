@@ -2,5 +2,6 @@
 """Module write file"""
 
 def write_file(filename="", text=""):
-    with open(filename, "w", encoding="UTF-8") as my_file:
+    """function write text"""
+    with open(filename, "w", encoding="utf-8") as my_file:
         return my_file.write(text)
