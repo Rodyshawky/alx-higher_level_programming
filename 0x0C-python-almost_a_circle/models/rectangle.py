@@ -86,12 +86,10 @@ class Rectangle(Base):
         print(n, end='')
 
     def __str__(self):
-        """function return string"""
-        str_rec = "[Rectangle]"
-        str_id = "({}) ".format(self.id)
-        str_xy = "{}/{} - ".format(self.x, self.y)
-        str_wh = "{}/{}".format(self.width, self.height)
-        return str_rec + str_id + str_xy + str_wh
+        '''Returns string info about this rectangle.'''
+        return '[{}] ({}) {}/{} - {}/{}'.\
+            format(type(self).__name__, self.id, self.x, self.y, self.width,
+                   self.height)
 
     def update(self, *args, **kwargs):
         """ update method """
